@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./public/css/output.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <header>
-      <nav></nav>
+  <body class="h-[190vh]">
+    <header class="  bg-[#faf0d9] ">
+      <nav class="flex justify-around items-center py-2.5 bg-[#ffd8b9] rounded-full fixed w-full">
+        <div>
+            <img class="w-[4rem] h-[3rem]" src="./public/images/logo-removebg-preview.png" alt="">
+        </div>
+        <div class="flex gap-[3rem]">
+            <a href="./index.html">home</a>
+            <a href="./public/pages/campaign.html">About the Campaign</a>
+            <a href="./public/pages/Help.html">Help Me</a>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- hero section  -->
-      <section class="w-full bg-linear-to-r from-[#faddc5] to-[##faeadb] flex">
-        <div class=" ">
-          <img
-            class="w-[50vw]"
-            src="./public/images/woman-background (1).svg"
-            alt=""
-          />
-        </div>
-        <div class="py-[4rem] px-[5rem] flex flex-col gap-3">
+      <!-- hero section  -->
+      <section
+        class="w-full flex bg-[url('/public/images/hero_section.jpg')] bg-cover h-fit justify-end pt-7"
+      >
+        <div class="py-[4rem] flex flex-col gap-3 pl-[3rem]">
           <h1 class="text-6xl text-[#860613] font-bold capitalize">
             break the silence .
           </h1>
@@ -34,7 +39,9 @@
             Together, we can end gender-based violence and build a safer
             society.
           </h3>
-          <a class="bg-[#910a1a] text-white capitalize flex w-fit py-[12px] px-[3rem] rounded-full items-center gap-[6px] font-bold " href="./public/pages/Help.html"
+          <a
+            class="bg-[#910a1a] text-white capitalize flex w-fit py-[12px] px-[3rem] rounded-full items-center gap-[6px] font-bold"
+            href="./public/pages/Help.html"
             >find help & support
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,6 +59,79 @@
           </a>
         </div>
       </section>
+      <!-- section_2 -->
+      <section class="bg-[#f9efd9] h-fit w-full flex gap-4" >
+        <!-- campaing -->
+        <div class="h-full w-[50%] flex flex-col gap-5 pl-[6rem] pt-[3rem]">
+          <div class="h-fit  flex items-center justify-between">
+            <div class="h-[3px] w-[120px] bg-[#87141f] rounded-full"></div>
+            <div class="text-3xl text-[#860613] capitalize">
+              About the Campaign
+            </div>
+            <div class="h-[3px] w-[120px] bg-[#87141f] rounded-full"></div>
+          </div>
+          <div class=" w-fit">
+            <h2 class="text-xl text-black w-[90%] capitalize">
+              The 16 Days of Activism against Gender-Based Violence run from
+              November 25 to December 10, to raise awareness and take action.
+            </h2>
+            <a
+              class="text-[#87141f] flex items-center gap-4 w-fit text-xl pt-3 capitalize"
+              href="./public/pages/campaign.html "
+            >
+              learn more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="19"
+                fill="currentColor"
+                class="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- calendrier -->
+        <div class="flex py-2  gap-6">
+          <div>
+            <img
+              class="w-[350px] h-fit rounded-l-2xl"
+              src="./public/images/svg_sections_2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col gap-4 " >
+            <div
+              class="flex flex-col items-center gap-2 rounded-lg border-t-8 border-[#b42a22] bg-[#fbc796] px-3 py-7 text-sm font-semibold text-[#b42a22] capitalize"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#980c18"
+                class="bi bi-calendar3"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"
+                />
+                <path
+                  d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                />
+              </svg>
+              Nov 25 - dec 10 
+            </div>
+            <span class="flex items-center  rounded-lg border-b-5 border-[#850a17]  bg-[#ce7227] px-3 py-4 text-[#fbc797] capitalize" >16 days of Activism</span>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </body>
 </html>
