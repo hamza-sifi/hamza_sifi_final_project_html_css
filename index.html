@@ -5,13 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./public/css/output.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
   </head>
-  <body class="h-[190vh]">
+  <body>
     <header class="bg-[#faf0d9]">
       <nav
         class="flex justify-around items-center py-2.5 bg-[#ffd8b9] rounded-full fixed w-full"
@@ -23,10 +18,10 @@
             alt=""
           />
         </div>
-        <div class="flex gap-[3rem]">
-          <a href="./index.html">home</a>
-          <a href="./public/pages/campaign.html">About the Campaign</a>
-          <a href="./public/pages/Help.html">Help Me</a>
+        <div class="flex gap-[3rem] text-[#860613] font-bold capitalize ">
+          <a class="hover:text-[#e27646] hover:font-extrabold" href="./index.html">home</a>
+          <a class="hover:text-[#e27646] hover:font-extrabold" href="./public/pages/campaign.html">About the Campaign</a>
+          <a class="hover:text-[#f70000] hover:font-extrabold bg-[#e27646] py-[5px] px-[20px] rounded-full" href="./public/pages/Help.html">Help Me</a>
         </div>
       </nav>
     </header>
@@ -50,7 +45,7 @@
             society.
           </h3>
           <a
-            class="bg-[#910a1a] text-white capitalize flex w-fit py-[12px] px-[3rem] rounded-full items-center gap-[6px] font-bold"
+            class="bg-[#910a1a] text-white capitalize flex w-fit py-[12px] px-[3rem] rounded-full items-center gap-[6px] font-bold hover:shadow-[0_4px_10px_black] transition"
             href="./public/pages/Help.html"
             >find help & support
             <svg
@@ -146,17 +141,17 @@
       </section>
       <!-- section 3 -->
       <section
-        class="bg-[url('/public/images/background3.png')] w-full h-[60vh] bg-cover bg-no-repeat bg-center pl-[6rem] pt-[1rem]   "
+        class="bg-[url('/public/images/background3.png')] w-full h-[60vh] bg-cover bg-no-repeat bg-center pl-[6rem] pt-[1rem]"
       >
-        <div class=" w-[50%] h-fit flex flex-col gap-4 ]  ">
-          <div class="h-fit w-fit gap-4 flex items-center pl-12 ">
+        <div class="w-[50%] h-fit flex flex-col gap-4 ]">
+          <div class="h-fit w-fit gap-4 flex items-center pl-12">
             <div class="h-[3px] w-[120px] bg-[#87141f] rounded-full"></div>
-            <div class="text-3xl text-[#860613] capitalize ">
+            <div class="text-3xl text-[#860613] capitalize">
               Types of Violence
             </div>
             <div class="h-[3px] w-[120px] bg-[#87141f] rounded-full"></div>
           </div>
-          <div class="flex flex-wrap gap-4 ">
+          <div class="flex flex-wrap gap-4">
             <div
               class="bg-[#fdeee2] w-fit rounded-2xl flex items-center flex-col p-[3rem] gap-2 font-bold"
             >
@@ -284,7 +279,128 @@
           </div>
         </div>
       </section>
+      <!-- section 4 -->
+      <section class="bg-[#feede0] p-5">
+        <div class="h-fit flex items-center justify-around py-3">
+          <div class="text-3xl text-[#860613] capitalize">Latest Articles</div>
+          <div class="h-[3px] w-[50vw] bg-[#87141f] rounded-full"></div>
+          <a
+            href=""
+            class="text-[#910a1a] capitalize flex w-fit items-center gap-[20px] font-bold"
+          >
+            vew all
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="19"
+              height="19"
+              fill="currentColor"
+              class="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="flex justify-around">
+            <div>
+          <div class="w-[25vw] hover:shadow-[0_4px_10px_black] rounded-3xl transition ">
+            <img
+              class="w-[25vw] h-[25vh] rounded-t-3xl"
+              src="./public/images/article1.png"
+              alt="omg"
+            />
+            <div class="capitalize font-bold bg-[#f6ba96] p-6  rounded-b-3xl flex flex-col gap-3">
+              <span>Access to Justice:</span>
+              <span>A Right for Every Survivor</span>
+              <span class="flex  items-center gap-3.5 text-[#a1131f]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19"
+                  height="19"
+                  fill="#9f3130"
+                  class="bi bi-calendar3-week"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"
+                  />
+                  <path
+                    d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m2-3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                  />
+                </svg>
+                Nov 25, 2026
+              </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="w-[25vw] hover:shadow-[0_4px_10px_black] transition rounded-3xl ">
+            <img
+              class="w-[25vw] h-[25vh] rounded-t-3xl"
+              src="./public/images/article2.png"
+              alt="omg"
+            />
+            <div class="capitalize font-bold bg-[#f6ba96] p-6  rounded-b-3xl flex flex-col gap-3">
+              <span>Solidarity: Stronger </span>
+              <span>Together</span>
+              <span class="flex  items-center gap-3.5 text-[#a1131f]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19"
+                  height="19"
+                  fill="#9f3130"
+                  class="bi bi-calendar3-week"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"
+                  />
+                  <path
+                    d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m2-3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                  />
+                </svg>
+                Nov 24, 2026
+              </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="w-[25vw] hover:shadow-[0_4px_10px_black] transition rounded-3xl ">
+            <img
+              class="w-[25vw] h-[25vh] rounded-t-3xl "
+              src="./public/images/article3.png"
+              alt="omg"
+            />
+            <div class="capitalize font-bold bg-[#f6ba96] p-6  rounded-b-3xl flex flex-col gap-3">
+              <span>End Gender-Based </span>
+              <span> Violencer</span>
+              <span class="flex  items-center gap-3.5 text-[#a1131f]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19"
+                  height="19"
+                  fill="#9f3130"
+                  class="bi bi-calendar3-week"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"
+                  />
+                  <path
+                    d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m2-3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                  />
+                </svg>
+                Nov 20, 2026
+              </span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   
   </body>
 </html>
