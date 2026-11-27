@@ -29,7 +29,7 @@
     <main>
       <!-- hero section  -->
       <section
-        class="w-full flex bg-[url('/public/images/hero_section.jpg')] bg-cover h-fit justify-end pt-7"
+        class="w-full flex bg-[url('/public/images/hero_section.jpg')] bg-cover h-fit justify-end pt-7 max-sm:flex-col max-sm:bg-right"
       >
         <div class="py-[4rem] flex flex-col gap-3 pl-[3rem]">
           <h1 class="text-6xl text-[#860613] font-bold capitalize">
@@ -65,13 +65,13 @@
         </div>
       </section>
       <!-- section_2 -->
-      <section class="bg-[#f9efd9] h-fit w-full flex gap-4 ">
+      <section class="bg-[#f9efd9] h-fit w-full flex gap-4 max-sm:flex-col ">
         <!-- campaing -->
-        <div class="h-full w-[50%] flex flex-col gap-5 pl-[6rem] pt-[3rem]">
-          <div class="h-fit flex items-center justify-between">
+        <div class="h-full w-[50%] flex flex-col gap-5 pl-[6rem] pt-[3rem] max-sm:w-full max-sm:px-[2rem] ">
+          <div class="h-fit flex items-center justify-between max-sm:gap-2 ">
             <div class="h-[3px] w-[120px] bg-[#87141f] rounded-full"></div>
-            <div class="text-3xl text-[#860613] capitalize">
-              About the Campaign
+            <div class="text-3xl text-[#860613] capitalize ">
+             <h1 class="max-sm:w-[140px]"> About the Campaign</h1>
             </div>
             <div class="h-[3px] w-[120px] bg-[#87141f] rounded-full"></div>
           </div>
@@ -103,10 +103,10 @@
         </div>
 
         <!-- calendrier -->
-        <div class="flex py-2 gap-6">
-          <div>
+        <div class="flex py-2 gap-6 max-sm:flex-col ">
+          <div class="flex justify-center">
             <img
-              class="w-[350px] h-fit rounded-l-2xl"
+              class="w-[350px] h-fit rounded-l-2xl "
               src="./public/images/svg_sections_2.jpg"
               alt=""
             />
@@ -141,19 +141,19 @@
       </section>
       <!-- section 3 -->
       <section
-        class="bg-[url('/public/images/background3.png')] w-full h-[60vh] bg-cover bg-no-repeat bg-center pl-[6rem] pt-[1rem]"
+        class="bg-[url('/public/images/background3.png')] w-full  bg-cover bg-no-repeat bg-center pl-[6rem] py-[2rem] max-sm:px-[2rem]  max-sm:flex max-sm:justify-center "
       >
-        <div class="w-[50%] h-fit flex flex-col gap-4 ]">
-          <div class="h-fit w-fit gap-4 flex items-center pl-12">
+        <div class="w-[50%] h-fit flex flex-col gap-4 max-sm:items-center justify-center">
+          <div class="h-fit w-fit gap-4 flex items-center pl-12  max-sm:pl-0">
             <div class="h-[3px] w-[120px] bg-[#87141f] rounded-full"></div>
             <div class="text-3xl text-[#860613] capitalize">
-              Types of Violence
+             <h1 class="max-sm:w-[130px] max-sm:pl-1"> Types of Violence</h1>
             </div>
             <div class="h-[3px] w-[120px] bg-[#87141f] rounded-full"></div>
           </div>
           <div class="flex flex-wrap gap-4">
             <div
-              class="bg-[#fdeee2] w-fit rounded-2xl flex items-center flex-col p-[3rem] gap-2 font-bold"
+              class="bg-[#fdeee2] w-fit rounded-2xl flex items-center flex-col p-[3rem] gap-2 font-bold justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +170,7 @@
               Physical Violence
             </div>
             <div
-              class="bg-[#fdeee2] w-fit rounded-2xl flex items-center flex-col px-[1.5rem] font-bold"
+              class="bg-[#fdeee2] w-fit rounded-2xl flex items-center flex-col px-[1.5rem] font-bold justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -240,7 +240,7 @@
               Digital Violence
             </div>
             <div
-              class="bg-[#fdeee2] w-fit rounded-2xl flex items-center flex-col p-[2.5rem] gap-2 font-bold"
+              class="bg-[#fdeee2] w-fit rounded-2xl flex items-center flex-col p-[2.5rem] gap-2 font-bold justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -280,13 +280,13 @@
         </div>
       </section>
       <!-- section 4 -->
-      <section class="bg-[#feede0] p-5">
-        <div class="h-fit flex items-center justify-around py-3">
-          <div class="text-3xl text-[#860613] capitalize">Latest Articles</div>
+      <section class="bg-[#feede0] p-5 ">
+        <div class="h-fit flex items-center justify-around py-3 max-sm:gap-2">
+          <div class="text-3xl text-[#860613] capitalize"><h2 class="max-sm:w-[100px]">Latest Articles</h2></div>
           <div class="h-[3px] w-[50vw] bg-[#87141f] rounded-full"></div>
           <a
             href=""
-            class="text-[#910a1a] capitalize flex w-fit items-center gap-[20px] font-bold"
+            class="text-[#910a1a] capitalize flex w-fit items-center gap-[20px] font-bold min-w-[110px]"
           >
             vew all
             <svg
@@ -304,11 +304,11 @@
             </svg>
           </a>
         </div>
-        <div class="flex justify-around">
+        <div class="flex justify-around max-sm:flex-col max-sm:gap-4">
             <div>
-          <div class="w-[25vw] hover:shadow-[0_4px_10px_black] rounded-3xl transition ">
+          <div class="w-[25vw] hover:shadow-[0_4px_10px_black] rounded-3xl transition max-sm:w-full ">
             <img
-              class="w-[25vw] h-[25vh] rounded-t-3xl"
+              class="w-[25vw] h-[25vh] rounded-t-3xl max-sm:w-full "
               src="./public/images/article1.png"
               alt="omg"
             />
@@ -337,9 +337,9 @@
           </div>
         </div>
         <div>
-          <div class="w-[25vw] hover:shadow-[0_4px_10px_black] transition rounded-3xl ">
+          <div class="w-[25vw] hover:shadow-[0_4px_10px_black] transition rounded-3xl max-sm:w-full ">
             <img
-              class="w-[25vw] h-[25vh] rounded-t-3xl"
+              class="w-[25vw] h-[25vh] rounded-t-3xl max-sm:w-full"
               src="./public/images/article2.png"
               alt="omg"
             />
@@ -368,9 +368,9 @@
           </div>
         </div>
         <div>
-          <div class="w-[25vw] hover:shadow-[0_4px_10px_black] transition rounded-3xl ">
+          <div class="w-[25vw] hover:shadow-[0_4px_10px_black] transition rounded-3xl max-sm:w-full ">
             <img
-              class="w-[25vw] h-[25vh] rounded-t-3xl "
+              class="w-[25vw] h-[25vh] rounded-t-3xl max-sm:w-full "
               src="./public/images/article3.png"
               alt="omg"
             />
@@ -401,7 +401,7 @@
         </div>
       </section>
     </main>
-    <footer class="bg-[#f69120] flex items-center justify-around py-[15px] ">
+    <footer class="bg-[#f69120] flex items-center justify-around py-[15px] max-sm:flex-col max-sm:gap-4 ">
       <div class="flex gap-3 items-center w-fit">
          <img
             class="w-[4rem] h-[3rem]"
