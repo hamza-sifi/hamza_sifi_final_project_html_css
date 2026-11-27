@@ -194,11 +194,20 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .fixed {
     position: fixed;
   }
+  .relative {
+    position: relative;
+  }
   .flex {
     display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .table {
     display: table;
@@ -407,6 +416,9 @@
   .transform {
     transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
   }
@@ -574,6 +586,9 @@
   }
   .bg-\[\#930815\] {
     background-color: #930815;
+  }
+  .bg-\[\#960916\] {
+    background-color: #960916;
   }
   .bg-\[\#\] {
     background-color: #;
@@ -770,6 +785,9 @@
   .px-\[5\] {
     padding-inline: 5;
   }
+  .px-\[5px\] {
+    padding-inline: 5px;
+  }
   .px-\[5rem\] {
     padding-inline: 5rem;
   }
@@ -950,6 +968,9 @@
   .text-\[\#920717\] {
     color: #920717;
   }
+  .text-\[\#960916\] {
+    color: #960916;
+  }
   .text-\[\#22212084\] {
     color: #22212084;
   }
@@ -970,6 +991,15 @@
   }
   .text-\[\#fbefd9\] {
     color: #fbefd9;
+  }
+  .text-\[\#fdf3e8\] {
+    color: #fdf3e8;
+  }
+  .text-\[9d8b84\] {
+    color: 9d8b84;
+  }
+  .text-\[fdf3e8\] {
+    color: fdf3e8;
   }
   .text-black {
     color: var(--color-black);
@@ -1121,6 +1151,15 @@
     }
   }
   @media (width < 40rem) {
+    .max-sm\:absolute {
+      position: absolute;
+    }
+    .max-sm\:top-18 {
+      top: calc(var(--spacing) * 18);
+    }
+    .max-sm\:-right-100 {
+      right: calc(var(--spacing) * -100);
+    }
     .max-sm\:flex {
       display: flex;
     }
@@ -1148,6 +1187,19 @@
     .max-sm\:w-full {
       width: 100%;
     }
+    .max-sm\:translate-1 {
+      --tw-translate-x: var(--spacing);
+      --tw-translate-y: var(--spacing);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .max-sm\:translate-5 {
+      --tw-translate-x: calc(var(--spacing) * 5);
+      --tw-translate-y: calc(var(--spacing) * 5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .max-sm\:transform {
+      transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
+    }
     .max-sm\:flex-col {
       flex-direction: column;
     }
@@ -1163,6 +1215,12 @@
     .max-sm\:gap-4 {
       gap: calc(var(--spacing) * 4);
     }
+    .max-sm\:rounded-full {
+      border-radius: calc(infinity * 1px);
+    }
+    .max-sm\:bg-\[\#803d23\] {
+      background-color: #803d23;
+    }
     .max-sm\:bg-center {
       background-position: center;
     }
@@ -1171,6 +1229,9 @@
     }
     .max-sm\:bg-right {
       background-position: right;
+    }
+    .max-sm\:p-\[4rem\] {
+      padding: 4rem;
     }
     .max-sm\:px-\[2rem\] {
       padding-inline: 2rem;
@@ -1185,6 +1246,22 @@
     }
     .max-sm\:pl-1 {
       padding-left: var(--spacing);
+    }
+    .max-sm\:text-white {
+      color: var(--color-white);
+    }
+    .max-sm\:transition {
+      transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+      transition-duration: var(--tw-duration, var(--default-transition-duration));
+    }
+    .max-sm\:transition-shadow {
+      transition-property: box-shadow;
+      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+      transition-duration: var(--tw-duration, var(--default-transition-duration));
+    }
+    :is(:where(.peer):checked ~ .max-sm\:peer-checked\:right-15) {
+      right: calc(var(--spacing) * 15);
     }
   }
 }
@@ -1344,6 +1421,21 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: block))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1381,6 +1473,9 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
     }
   }
 }
