@@ -9,17 +9,28 @@
 </head>
 
 <body>
-  <header>
-    <nav class="flex justify-around items-center py-2.5 bg-[#ffd8b9] rounded-full fixed w-full">
+ <header class="bg-[#faf0d9] ">
+    <nav class="flex justify-around items-center py-2.5 bg-[#ffd8b9] rounded-full fixed w-full ">
       <div>
         <img class="w-[4rem] h-[3rem]" src="../images/logo-removebg-preview.png" alt="" />
       </div>
-      <div class="flex gap-[3rem] text-[#860613] font-bold capitalize">
+      <input type="checkbox" id="menu_checked" class="peer hidden">
+      <div
+        class="flex gap-[3rem] text-[#860613] font-bold capitalize max-sm:absolute max-sm:flex max-sm:flex-col max-sm:-right-100 max-sm:bg-[#803d23] max-sm:top-18 max-sm:peer-checked:right-15 max-sm:text-white max-sm:p-[4rem] max-sm:rounded-full">
         <a class="hover:text-[#e27646] hover:font-extrabold" href="../../index.html">home</a>
         <a class="hover:text-[#e27646] hover:font-extrabold" href="./campaign.html">About the Campaign</a>
-        <a class="hover:text-[#f70000] hover:font-extrabold bg-[#e27646] py-[5px] px-[20px] rounded-full"
-          href="./Help.html">Help Me</a>
       </div>
+
+      <a class="hover:text-[#f70000] hover:font-extrabold bg-[#e27646] py-[5px] px-[20px] rounded-full"
+        href="./Help.html">Help Me</a>
+      <label for="menu_checked" class="cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </svg>
+      </label>
+
     </nav>
   </header>
   <main>
@@ -27,10 +38,10 @@
     <section>
       <section
         class="w-full flex bg-[url('/public/images/second_background.png')] bg-cover bg-center h-fit justify-end pt-9">
-        <div class="py-[8rem] pr-[10rem] flex flex-col gap-6">
+        <div class="py-[8rem] pr-[10rem] flex flex-col gap-6 max-sm:pl-0 max-sm:px-[1rem] max-sm:items-center">
           <span class="bg-[#f7741d] text-white w-fit px-[5rem] py-[1rem] rounded-full">ACCESS TO
             JUSTICE</span>
-          <h1 class="text-6xl text-[#860613] font-bold capitalize">
+          <h1 class="text-6xl text-[#860613] font-bold capitalize max-sm:text-center">
             Every Survivor
           </h1>
           <h1 class="text-5xl text-[#e27646] font-bold capitalize">
@@ -52,14 +63,14 @@
     </section>
     <!-- section 1 -->
     <section class="bg-[#feeee0] flex flex-col gap-[5rem] py-[3rem]">
-      <div class="h-fit flex items-center justify-around">
-        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full"></div>
+      <div class="h-fit flex items-center justify-around max-sm:flex-col">
+        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full max-sm:hidden"></div>
         <div class="text-3xl text-[#860613] capitalize">
           Why Access to Justice Matters
         </div>
-        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full"></div>
+        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full  max-sm:hidden"></div>
       </div>
-      <div class="flex items-center justify-around">
+      <div class="flex items-center justify-around max-sm:flex-col max-sm:gap-[2rem]">
         <div class="flex flex-col gap-1.5 items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#b71615"
             class="bi bi-shield-fill-check" viewBox="0 0 16 16">
@@ -69,7 +80,7 @@
           <h2 class="text-lg font-bold text-[#8a0914]">Protection</h2>
           <p class="font-bold">Safety and dignity.</p>
         </div>
-        <div class="h-[150px] w-[4px] bg-[#b71615] rounded-full"></div>
+        <div class="h-[150px] w-[4px] bg-[#b71615] rounded-full  max-sm:hidden"></div>
         <div class="flex flex-col gap-1.5 items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#b71615" class="bi bi-bank2"
             viewBox="0 0 16 16">
@@ -79,7 +90,7 @@
           <h2 class="text-lg font-bold text-[#8a0914]">Accountability</h2>
           <p class="font-bold">Ending impunity.</p>
         </div>
-        <div class="h-[150px] w-[4px] bg-[#b71615] rounded-full"></div>
+        <div class="h-[150px] w-[4px] bg-[#b71615] rounded-full  max-sm:hidden"></div>
         <div class="flex flex-col gap-1.5 items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#b71615" class="bi bi-people-fill"
             viewBox="0 0 16 16">
@@ -93,14 +104,14 @@
     </section>
     <!-- section 2  -->
     <section class=" bg-[#fdf3e8] flex flex-col gap-7 py-[3rem]">
-      <div class="h-fit flex items-center justify-around">
-        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full"></div>
+      <div class="h-fit flex items-center justify-around ">
+        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full max-sm:hidden"></div>
         <div class="text-3xl text-[#860613] capitalize">
           The Rights of Survivors
         </div>
-        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full"></div>
+        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full max-sm:hidden"></div>
       </div>
-      <div class="flex justify-around">
+      <div class="flex justify-around max-sm:flex-col max-sm:gap-[2rem] max-sm:items-center">
         <div class="bg-[#fdebde] flex flex-col items-center gap-8 rounded-2xl w-fit p-[3rem]">
           <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#b71615" class="bi bi-ear"
             viewBox="0 0 16 16">
@@ -142,15 +153,15 @@
       </div>
     </section>
     <!-- sections 3 -->
-    <section class="bg-[#fdf3e8] flex flex-col gap-6 py-[3rem]">
+    <section class="bg-[#feeee0] flex flex-col gap-6 py-[3rem]">
       <div class="h-fit flex items-center justify-around">
-        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full"></div>
+        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full max-sm:hidden"></div>
         <div class="text-3xl text-[#860613] capitalize">
           From Silence to Justice
         </div>
-        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full"></div>
+        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full max-sm:hidden"></div>
       </div>
-      <div class="flex justify-around items-center">
+      <div class="flex justify-around items-center max-sm:flex-col max-sm:items-center max-sm:gap-[2rem]">
         <div class="flex flex-col gap-[10px] items-center">
           <svg class="bg-[#930815] p-4  rounded-full" xmlns="http://www.w3.org/2000/svg" width="80" height="80"
             fill="white" class="bi bi-chat-dots" viewBox="0 0 16 16">
@@ -245,13 +256,13 @@
     <!-- section 4 -->
     <section class="flex flex-col py-[2rem] bg-[#fdf3e8]">
       <div class="h-fit flex items-center justify-around">
-        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full"></div>
+        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full max-sm:hidden"></div>
         <div class="text-3xl text-[#860613] capitalize">
           The 16 Days Campaign
         </div>
-        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full"></div>
+        <div class="h-[3px] w-[400px] bg-[#87141f] rounded-full max-sm:hidden"></div>
       </div>
-      <div class="flex items-center p-[2rem] justify-around">
+      <div class="flex items-center p-[2rem] justify-around max-sm:flex-col max-sm:items-center max-sm:gap-[2rem]">
         <div class="flex flex-col gap-4">
           <div>
             <h1 class="text-[#87141f] text-2xl font-bold">From Awareness</h1>
@@ -271,7 +282,7 @@
           </span>
         </div>
 
-        <div class="flex items-center gap-[3rem] p-[2rem]">
+        <div class="flex items-center gap-[3rem] p-[2rem] max-sm:flex-col max-sm:justify-around max-sm:gap-[rem]">
           <div class="flex flex-col items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -337,7 +348,7 @@
   </main>
      <footer class="bg-[#f69120] flex items-center justify-around py-[15px] max-sm:flex-col max-sm:gap-4 ">
     <div class="flex gap-3 items-center w-fit">
-      <img class="w-[4rem] h-[3rem]" src="./public/images/logo-removebg-preview.png" alt="" />
+      <img class="w-[4rem] h-[3rem]" src="../images/logo-removebg-preview.png" alt="" />
       <h3>campaign</h3>
     </div>
     <span>16 Days of Activism Apalnst Gender-Based Vioience</span>

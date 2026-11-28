@@ -584,6 +584,9 @@
   .bg-\[\#87141f\] {
     background-color: #87141f;
   }
+  .bg-\[\#383939\] {
+    background-color: #383939;
+  }
   .bg-\[\#930815\] {
     background-color: #930815;
   }
@@ -669,6 +672,9 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'\/public\/79ff5e9f-476f-477b-b1fe-90adc1b131df\.jpg\'\)\] {
+    background-image: url('/public/79ff5e9f-476f-477b-b1fe-90adc1b131df.jpg');
+  }
   .bg-\[url\(\'\/public\/images\/\'\)\] {
     background-image: url('/public/images/');
   }
@@ -692,6 +698,9 @@
   }
   .bg-\[url\(\'\/public\/images\/hero_section\.jpg\'\)\] {
     background-image: url('/public/images/hero_section.jpg');
+  }
+  .bg-\[url\(\'\/public\/images\/herosec3\.png\'\)\] {
+    background-image: url('/public/images/herosec3.png');
   }
   .bg-\[url\(\'\/public\/images\/sec\'\)\] {
     background-image: url('/public/images/sec');
@@ -1163,6 +1172,9 @@
     .max-sm\:flex {
       display: flex;
     }
+    .max-sm\:hidden {
+      display: none;
+    }
     .max-sm\:w-\[100\] {
       width: 100;
     }
@@ -1206,6 +1218,9 @@
     .max-sm\:items-center {
       align-items: center;
     }
+    .max-sm\:justify-around {
+      justify-content: space-around;
+    }
     .max-sm\:justify-center {
       justify-content: center;
     }
@@ -1214,6 +1229,15 @@
     }
     .max-sm\:gap-4 {
       gap: calc(var(--spacing) * 4);
+    }
+    .max-sm\:gap-\[2rem\] {
+      gap: 2rem;
+    }
+    .max-sm\:gap-\[3rem\] {
+      gap: 3rem;
+    }
+    .max-sm\:gap-\[rem\] {
+      gap: rem;
     }
     .max-sm\:rounded-full {
       border-radius: calc(infinity * 1px);
@@ -1233,6 +1257,9 @@
     .max-sm\:p-\[4rem\] {
       padding: 4rem;
     }
+    .max-sm\:px-\[1rem\] {
+      padding-inline: 1rem;
+    }
     .max-sm\:px-\[2rem\] {
       padding-inline: 2rem;
     }
@@ -1246,6 +1273,9 @@
     }
     .max-sm\:pl-1 {
       padding-left: var(--spacing);
+    }
+    .max-sm\:text-center {
+      text-align: center;
     }
     .max-sm\:text-white {
       color: var(--color-white);
